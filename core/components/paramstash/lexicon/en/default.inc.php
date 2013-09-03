@@ -2,22 +2,6 @@
 /**
  * en default topic lexicon file for paramStash extra
  *
- * Copyright 2013 by Corey Hinshaw <hinshaw.25@osu.edu>
- * Created on 09-03-2013
- *
- * paramStash is free software; you can redistribute it and/or modify it under the
- * terms of the GNU General Public License as published by the Free Software
- * Foundation; either version 2 of the License, or (at your option) any later
- * version.
- *
- * paramStash is distributed in the hope that it will be useful, but WITHOUT ANY
- * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
- * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * paramStash; if not, write to the Free Software Foundation, Inc., 59 Temple
- * Place, Suite 330, Boston, MA 02111-1307 USA
- *
  * @package paramstash
  */
 
@@ -34,3 +18,10 @@
  * @package paramstash
  **/
 
+
+
+/* Used in transport.settings.php */
+$_lang['setting_paramstash.lifetime'] = 'Stash lifetime';
+$_lang['setting_paramstash.lifetime_desc'] = 'The number of seconds a URL parameter should be kept in the parameter stash. Leaving the setting blank means cached parameters will never expire.';
+$_lang['setting_paramstash.params'] = 'Stash parameters';
+$_lang['setting_paramstash.params_desc'] = 'Comma separated list of URL parameters to place in the parameter stash. If not set, all parameters will be added.';
