@@ -4,6 +4,8 @@ $output = array();
 
 if ($separator) {
   $prefix = '?';
+} else {
+  $prefix = '';
 }
 
 // Get user specified parameters or get them all
