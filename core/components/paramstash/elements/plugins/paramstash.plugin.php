@@ -1,4 +1,11 @@
 <?php
+/**
+ * paraStash plugin for paramStash extra
+ * Stores URL parameters in the stash and purges old entries
+ *
+ * @package paramstash
+ */
+
 // If our session doesn't have a parameter stash, create one
 if ( ! is_array($_SESSION['paramStash'])) {
   $_SESSION['paramStash'] = array();

@@ -2,9 +2,6 @@
 /**
  * snippets transport file for paramStash extra
  *
- * Copyright 2013 by Corey Hinshaw <hinshaw.25@osu.edu>
- * Created on 09-03-2013
- *
  * @package paramstash
  * @subpackage build
  */

@@ -3,7 +3,7 @@
  * Properties file for paramStash snippet
  *
  * Copyright 2013 by Corey Hinshaw <hinshaw.25@osu.edu>
- * Created on 09-03-2013
+ * Created on 09-04-2013
  *
  * @package paramstash
  * @subpackage build
@@ -16,43 +16,43 @@ $properties = array (
   'params' => 
   array (
     'name' => 'params',
-    'desc' => 'paramstash.snipParams.desc',
+    'desc' => 'prop_paramstash.snipParams_desc',
     'type' => 'textfield',
     'options' => 
     array (
     ),
     'value' => '',
-    'lexicon' => NULL,
+    'lexicon' => 'paramstash:properties',
     'area' => '',
-    'desc_trans' => 'paramstash.snipParams.desc',
+    'desc_trans' => 'prop_paramstash.snipParams_desc',
     'area_trans' => '',
   ),
   'separator' => 
   array (
     'name' => 'separator',
-    'desc' => 'paramstash.separator.desc',
+    'desc' => 'prop_paramstash.separator_desc',
     'type' => 'combo-boolean',
     'options' => 
     array (
     ),
     'value' => false,
-    'lexicon' => NULL,
+    'lexicon' => 'paramstash:properties',
     'area' => '',
-    'desc_trans' => 'paramstash.separator.desc',
+    'desc_trans' => 'prop_paramstash.separator_desc',
     'area_trans' => '',
   ),
   'valueOnly' => 
   array (
     'name' => 'valueOnly',
-    'desc' => 'paramstash.valueonly.desc',
+    'desc' => 'prop_paramstash.valueonly_desc',
     'type' => 'combo-boolean',
     'options' => 
     array (
     ),
     'value' => false,
-    'lexicon' => NULL,
+    'lexicon' => 'paramstash:properties',
     'area' => '',
-    'desc_trans' => 'paramstash.valueonly.desc',
+    'desc_trans' => 'prop_paramstash.valueonly_desc',
     'area_trans' => '',
   ),
 );

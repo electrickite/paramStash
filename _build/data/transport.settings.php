@@ -2,9 +2,6 @@
 /**
  * systemSettings transport file for paramStash extra
  *
- * Copyright 2013 by Corey Hinshaw <hinshaw.25@osu.edu>
- * Created on 09-03-2013
- *
  * @package paramstash
  * @subpackage build
  */
@@ -38,7 +35,7 @@ $systemSettings[1]->fromArray(array (
 $systemSettings[2] = $modx->newObject('modSystemSetting');
 $systemSettings[2]->fromArray(array (
   'key' => 'paramstash.lifetime',
-  'value' => '3600',
+  'value' => '30',
   'xtype' => 'textfield',
   'namespace' => 'paramstash',
   'area' => '',

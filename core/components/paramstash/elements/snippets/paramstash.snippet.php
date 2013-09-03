@@ -1,4 +1,11 @@
 <?php
+/**
+ * paraStash snippet for paramStash extra
+ * Fetches URL parameters from the parameter stash
+ *
+ * @package paramstash
+ */
+
 $stash = $_SESSION['paramStash'];
 $output = array();
 

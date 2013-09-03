@@ -1,5 +1,10 @@
 Changelog for paramStash
 
+paramStash 1.0.0
+---------------------------------
+First stable release
+
+
 paramStash 0.1.0
 ---------------------------------
 Initial Version
