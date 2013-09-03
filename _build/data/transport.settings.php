@@ -35,7 +35,7 @@ $systemSettings[1]->fromArray(array (
 $systemSettings[2] = $modx->newObject('modSystemSetting');
 $systemSettings[2]->fromArray(array (
   'key' => 'paramstash.lifetime',
-  'value' => '30',
+  'value' => '3600',
   'xtype' => 'textfield',
   'namespace' => 'paramstash',
   'area' => '',
