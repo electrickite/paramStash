@@ -1,6 +1,10 @@
 <?php
 $stash = $_SESSION['paramStash'];
-$output = '';
+$output = array();
+
+if ($separator) {
+  $prefix = '?';
+}
 
 // Get user specified parameters or get them all
 if (empty($params)) {
@@ -11,10 +15,10 @@ if (empty($params)) {
 
 foreach ($paramList as $param) {
   if ($valueOnly) {
-    $output .= $stash[$param]['value'];
+    $output[] = $stash[$param]['value'];
   } else {
-    $output .= $param . '=' . $stash[$param]['value'];
+    $output[] = $param . '=' . $stash[$param]['value'];
   }
 }
 
-return $output;
+return $prefix . implode('&', $output);
