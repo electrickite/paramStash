@@ -27,6 +27,20 @@ $properties = array (
     'desc_trans' => 'Comma separated list of parameters to fetch from the stash. Defaults to all parameters.',
     'area_trans' => '',
   ),
+  'separator' => 
+  array (
+    'name' => 'separator',
+    'desc' => 'Prefix the output with a URL query string separator.',
+    'type' => 'combo-boolean',
+    'options' => 
+    array (
+    ),
+    'value' => false,
+    'lexicon' => NULL,
+    'area' => '',
+    'desc_trans' => 'Prefix the output with a URL query string separator.',
+    'area_trans' => '',
+  ),
   'valueOnly' => 
   array (
     'name' => 'valueOnly',
@@ -39,20 +53,6 @@ $properties = array (
     'lexicon' => NULL,
     'area' => '',
     'desc_trans' => 'Return only the values of each parameter, not the names.',
-    'area_trans' => '',
-  ),
-  'separator' => 
-  array (
-    'name' => 'separator',
-    'desc' => 'Insert a URL query string separator before the parameters.',
-    'type' => 'combo-boolean',
-    'options' => 
-    array (
-    ),
-    'value' => false,
-    'lexicon' => NULL,
-    'area' => '',
-    'desc_trans' => 'Insert a URL query string separator before the parameters.',
     'area_trans' => '',
   ),
 );
