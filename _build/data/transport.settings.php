@@ -27,22 +27,22 @@ $systemSettings = array();
 
 $systemSettings[1] = $modx->newObject('modSystemSetting');
 $systemSettings[1]->fromArray(array (
-  'key' => 'paramstash.lifetime',
-  'name' => 'Stash lifetime',
-  'description' => 'The number of seconds a URL parameter should be kept in the parameter stash. Leaving the setting blank means cached parameters will never expire.',
-  'namespace' => 'paramstash',
+  'key' => 'paramstash.params',
+  'value' => '',
   'xtype' => 'textfield',
-  'value' => '3600',
-  'area' => 'paramstash',
+  'namespace' => 'paramstash',
+  'area' => '',
+  'name' => 'Stash parameters',
+  'description' => 'Comma separated list of URL parameters to place in the parameter stash. If not set, all parameters will be added.',
 ), '', true, true);
 $systemSettings[2] = $modx->newObject('modSystemSetting');
 $systemSettings[2]->fromArray(array (
-  'key' => 'paramstash.params',
-  'name' => 'Stash parameters',
-  'description' => 'Comma separated list of URL parameters to place in the parameter stash. If not set, all parameters will be added.',
-  'namespace' => 'paramstash',
+  'key' => 'paramstash.lifetime',
+  'value' => '30',
   'xtype' => 'textfield',
-  'value' => '',
-  'area' => 'paramstash',
+  'namespace' => 'paramstash',
+  'area' => '',
+  'name' => 'Stash lifetime',
+  'description' => 'The number of seconds a URL parameter should be kept in the parameter stash. Leaving the setting blank means cached parameters will never expire.',
 ), '', true, true);
 return $systemSettings;

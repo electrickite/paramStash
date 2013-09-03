@@ -16,7 +16,7 @@ $properties = array (
   'params' => 
   array (
     'name' => 'params',
-    'desc' => 'Comma separated list of parameters to fetch from the stash. Defaults to all parameters.',
+    'desc' => 'paramstash.snipParams.desc',
     'type' => 'textfield',
     'options' => 
     array (
@@ -24,13 +24,13 @@ $properties = array (
     'value' => '',
     'lexicon' => NULL,
     'area' => '',
-    'desc_trans' => 'Comma separated list of parameters to fetch from the stash. Defaults to all parameters.',
+    'desc_trans' => 'paramstash.snipParams.desc',
     'area_trans' => '',
   ),
   'separator' => 
   array (
     'name' => 'separator',
-    'desc' => 'Prefix the output with a URL query string separator.',
+    'desc' => 'paramstash.separator.desc',
     'type' => 'combo-boolean',
     'options' => 
     array (
@@ -38,13 +38,13 @@ $properties = array (
     'value' => false,
     'lexicon' => NULL,
     'area' => '',
-    'desc_trans' => 'Prefix the output with a URL query string separator.',
+    'desc_trans' => 'paramstash.separator.desc',
     'area_trans' => '',
   ),
   'valueOnly' => 
   array (
     'name' => 'valueOnly',
-    'desc' => 'Return only the values of each parameter, not the names.',
+    'desc' => 'paramstash.valueonly.desc',
     'type' => 'combo-boolean',
     'options' => 
     array (
@@ -52,7 +52,7 @@ $properties = array (
     'value' => false,
     'lexicon' => NULL,
     'area' => '',
-    'desc_trans' => 'Return only the values of each parameter, not the names.',
+    'desc_trans' => 'paramstash.valueonly.desc',
     'area_trans' => '',
   ),
 );

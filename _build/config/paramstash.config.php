@@ -48,6 +48,33 @@ $components = array(
     'targetRoot' => MODX_ASSETS_PATH . 'mycomponents/' . $packageNameLower . '/',
 
 
+    /* *********************** NEW SYSTEM SETTINGS ************************ */
+
+    /* If your extra needs new System Settings, set their field values here.
+     * You can also create or edit them in the Manager (System -> System Settings),
+     * and export them with exportObjects. If you do that, be sure to set
+     * their namespace to the lowercase package name of your extra */
+
+    'newSystemSettings' => array(
+        'paramstash.lifetime' => array(
+            'key' => 'paramstash.lifetime',
+            'name' => 'Stash lifetime',
+            'description' => 'The number of seconds a URL parameter should be kept in the parameter stash. Leaving the setting blank means cached parameters will never expire.',
+            'namespace' => 'paramstash',
+            'xtype' => 'textfield',
+            'value' => '3600',
+        ),
+        'paramstash.params' => array(
+            'key' => 'paramstash.params',
+            'name' => 'Stash parameters',
+            'description' => 'Comma separated list of URL parameters to place in the parameter stash. If not set, all parameters will be added.',
+            'namespace' => 'paramstash',
+            'xtype' => 'textfield',
+            'value' => '',
+        ),
+    ),
+
+
     /* ************************ NAMESPACE(S) ************************* */
     /* (optional) Typically, there's only one namespace which is set
      * to the $packageNameLower value. Paths should end in a slash
@@ -176,6 +203,26 @@ $components = array(
     'process' => array(
         'snippets',
         'plugins',
+        'systemSettings',
+    ),
+
+
+    /* ******************** LEXICON HELPER SETTINGS ***************** */
+    /* These settings are used by LexiconHelper */
+    'rewriteCodeFiles' => false,  /* remove ~~descriptions */
+    'rewriteLexiconFiles' => true, /* automatically add missing strings to lexicon files */
+    /* ******************************************* */
+
+    /* Array of aliases used in code for the properties array.
+     * Used by the checkproperties utility to check properties in code against
+     * the properties in your properties transport files.
+     * if you use something else, add it here (OK to remove ones you never use.
+     * Search also checks with '$this->' prefix -- no need to add it here. */
+    'scriptPropertiesAliases' => array(
+        'props',
+        'sp',
+        'config',
+        'scriptProperties'
     ),
 
 );
