@@ -4,7 +4,7 @@ paramStash
 A MODX Revolution extra that grabs URL parameters from the query string and
 stashes them in the user session for later use.
 
-This could be useful to pass parameters to an external site for user tracking
+This could be used to pass parameters to an external site for user tracking
 purposes.
 
 Usage
