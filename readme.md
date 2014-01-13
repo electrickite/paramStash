@@ -35,9 +35,15 @@ has the following options:
     specified, they are all retrieved.
     Default: all parameters
   - separator: If set, a URL query string separator (?) will be prepended to the
-    snippet output.
+    snippet output if any parameters are returned.
     Default: 0
   - valueOnly: Only return the parameter values, do not display names.
+    Default: 0
+  - pre: If set, an ampersand will be prepended to the snippet output if any
+    parameters are returned.
+    Default: 0
+  - post: If set, an ampersand will be appended to the snippet output if any
+    parameters are returned.
     Default: 0
 
 Examples
@@ -50,6 +56,10 @@ URL: http://example.com/about.html?foo=bar&baz=boo
 ``[[!paramStash? &params=`foo` &separator=`1`]]`` returns `?foo=bar`
 
 ``[[!paramStash? &params=`foo` &viewOnly=`1`]]`` returns `bar`
+
+``[[!paramStash? &post=`1`]]`` returns `foo=bar&baz=boo&`
+
+``[[!paramStash? &params=`notset` &separator=`1` &post=`1`]]`` returns nothing
 
 
 Author: Corey Hinshaw <hinshaw.25@osu.edu>

@@ -8,6 +8,8 @@
 
 $output = array();
 $prefix = $separator ? '?' : '';
+$prefix = $pre ? '&' : $prefix;
+$suffix = $post ? '&' : '';
 
 if ( ! empty($_SESSION['paramStash'])) {
   $stash = $_SESSION['paramStash'];
@@ -27,4 +29,5 @@ if ( ! empty($_SESSION['paramStash'])) {
   }
 }
 
-return $prefix . implode('&', $output);
+$formatted = implode('&', $output);
+return $formatted ? $prefix . $formatted . $suffix : '';
