@@ -6,27 +6,24 @@
  * @package paramstash
  */
 
-$stash = $_SESSION['paramStash'];
 $output = array();
+$prefix = $separator ? '?' : '';
 
-if ($separator) {
-  $prefix = '?';
-} else {
-  $prefix = '';
-}
+if (isset($_SESSION['paramStash'])) {
+  $stash = $_SESSION['paramStash'];
 
-// Get user specified parameters or get them all
-if (empty($params)) {
-  $paramList = array_keys($stash);
-} else {
-  $paramList = explode(',', str_replace(' ', '', $params));
-}
-
-foreach ($paramList as $param) {
-  if ($valueOnly) {
-    $output[] = $stash[$param]['value'];
+  // Get user specified parameters or get them all
+  if (empty($params)) {
+    $paramList = array_keys($stash);
   } else {
-    $output[] = $param . '=' . $stash[$param]['value'];
+    $paramList = explode(',', str_replace(' ', '', $params));
+  }
+
+  foreach ($paramList as $param) {
+    $paramName = $valueOnly ? '' : $param . '=';
+    if (isset($stash[$param])) {
+      $output[] = $paramName . $stash[$param]['value'];
+    }
   }
 }
 
