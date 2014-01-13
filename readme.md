@@ -47,9 +47,9 @@ URL: http://example.com/about.html?foo=bar&baz=boo
 
 `[[!paramStash]]` returns `foo=bar&baz=boo`
 
-``[[!paramStash? $params=`foo` &separator=`1`]]`` returns `?foo=bar`
+``[[!paramStash? &params=`foo` &separator=`1`]]`` returns `?foo=bar`
 
-``[[!paramStash? $params=`foo` &viewOnly=`1`]]`` returns `bar`
+``[[!paramStash? &params=`foo` &viewOnly=`1`]]`` returns `bar`
 
 
 Author: Corey Hinshaw <hinshaw.25@osu.edu>
