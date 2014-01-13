@@ -1,5 +1,11 @@
 Changelog for paramStash
 
+paramStash 1.1.0
+---------------------------------
+Now repects request_param_alias system setting
+Code cleanup
+
+
 paramStash 1.0.0
 ---------------------------------
 First stable release
