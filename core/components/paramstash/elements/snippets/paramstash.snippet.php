@@ -9,7 +9,7 @@
 $output = array();
 $prefix = $separator ? '?' : '';
 
-if (isset($_SESSION['paramStash'])) {
+if ( ! empty($_SESSION['paramStash'])) {
   $stash = $_SESSION['paramStash'];
 
   // Get user specified parameters or get them all
