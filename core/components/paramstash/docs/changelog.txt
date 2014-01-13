@@ -1,5 +1,10 @@
 Changelog for paramStash
 
+paramStash 1.2.0
+---------------------------------
+Added pre and post options to add ampersands to output
+
+
 paramStash 1.1.0
 ---------------------------------
 Now repects request_param_alias system setting
