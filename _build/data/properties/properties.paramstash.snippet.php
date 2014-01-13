@@ -2,9 +2,6 @@
 /**
  * Properties file for paramStash snippet
  *
- * Copyright 2013 by Corey Hinshaw <hinshaw.25@osu.edu>
- * Created on 09-04-2013
- *
  * @package paramstash
  * @subpackage build
  */

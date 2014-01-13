@@ -16,14 +16,14 @@ $components = array(
     'packageName' => 'paramStash',  /* No spaces, no dashes */
     'packageNameLower' => $packageNameLower,
     'packageDescription' => 'Grabs URL parameters from the query string and stashes them in the user session for later use.',
-    'version' => '1.0.0',
+    'version' => '1.1.0',
     'release' => '',
     'author' => 'Corey Hinshaw',
     'email' => '<hinshaw.25@osu.edu>',
     'authorUrl' => '',
     'authorSiteName' => '',
     'packageDocumentationUrl' => '',
-    'copyright' => '2013',
+    'copyright' => '2014',
 
     /* no need to edit this except to change format */
     'createdon' => strftime('%m-%d-%Y'),
