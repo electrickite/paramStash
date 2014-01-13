@@ -14,7 +14,7 @@ $stash =& $_SESSION['paramStash'];
 
 // Remove the q parameter used by MODX
 $params = $_GET;
-unset($params['q']);
+unset($params[$modx->getOption('request_param_alias')]);
 
 // Clean out expired parameters
 $lifetime = $modx->getOption('paramstash.lifetime');
