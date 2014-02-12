@@ -7,9 +7,9 @@
  */
 
 $output = array();
-$prefix = $separator ? '?' : '';
-$prefix = $pre ? '&' : $prefix;
-$suffix = $post ? '&' : '';
+$prefix = !empty($separator) ? '?' : '';
+$prefix = !empty($pre) ? '&' : $prefix;
+$suffix = !empty($post) ? '&' : '';
 
 if ( ! empty($_SESSION['paramStash'])) {
   $stash = $_SESSION['paramStash'];
@@ -22,7 +22,7 @@ if ( ! empty($_SESSION['paramStash'])) {
   }
 
   foreach ($paramList as $param) {
-    $paramName = $valueOnly ? '' : $param . '=';
+    $paramName = !empty($valueOnly) ? '' : $param . '=';
     if (isset($stash[$param])) {
       $output[] = $paramName . $stash[$param]['value'];
     }

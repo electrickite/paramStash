@@ -7,7 +7,7 @@
  */
 
 // If our session doesn't have a parameter stash, create one
-if ( ! is_array($_SESSION['paramStash'])) {
+if ( !isset($_SESSION['paramStash']) || !is_array($_SESSION['paramStash']) ) {
   $_SESSION['paramStash'] = array();
 }
 $stash =& $_SESSION['paramStash'];
