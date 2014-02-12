@@ -1,6 +1,6 @@
 Changelog for paramStash
 
-paramStash 1.2.1
+paramStash 1.2.1-pl
 ---------------------------------
 Bug fixes
 
