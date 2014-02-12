@@ -1,5 +1,10 @@
 Changelog for paramStash
 
+paramStash 1.2.1
+---------------------------------
+Bug fixes
+
+
 paramStash 1.2.0
 ---------------------------------
 Added pre and post options to add ampersands to output
