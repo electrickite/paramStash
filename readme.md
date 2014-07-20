@@ -55,7 +55,7 @@ URL: http://example.com/about.html?foo=bar&baz=boo
 
 ``[[!paramStash? &params=`foo` &separator=`1`]]`` returns `?foo=bar`
 
-``[[!paramStash? &params=`foo` &viewOnly=`1`]]`` returns `bar`
+``[[!paramStash? &params=`foo` &valueOnly=`1`]]`` returns `bar`
 
 ``[[!paramStash? &post=`1`]]`` returns `foo=bar&baz=boo&`
 
@@ -79,4 +79,4 @@ this software; if not, write to the Free Software Foundation, Inc., 59 Temple
 Place, Suite 330, Boston, MA 02111-1307 USA
 
 The GNU General Public License is avilable in 
-core/components/inheritresourcegroups/docs/license.txt
+core/components/paramstash/docs/license.txt
