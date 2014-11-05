@@ -1,5 +1,10 @@
 Changelog for paramStash
 
+paramStash 1.3.0-pl
+---------------------------------
+Added case sensitivity option
+
+
 paramStash 1.2.2-pl
 ---------------------------------
 Fix documentation errors

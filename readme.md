@@ -25,6 +25,9 @@ Two system settings control the behavior of the plugin:
   - paramstash.lifetime: The amount of time (in seconds) a parameter will remain
     in the stash.
     Default: 3600
+  - paramstash.case_sensitive: Determines if parameter names are case sensitive.
+    If true, 'Foo' and 'foo' will be treated as distinct parameters
+    Default: Yes
 
 To retrieve parameters from the stash, use the paramStash snippet.
 `[[!paramStash]]` will return everything in the stash in key=value format. If
