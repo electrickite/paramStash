@@ -6,23 +6,29 @@
  * @package paramstash
  */
 
+$params = $modx->getOption('params', $scriptProperties);
+$separator = $modx->getOption('separator', $scriptProperties, false);
+$valueOnly = $modx->getOption('valueOnly', $scriptProperties, false);
+$pre = $modx->getOption('pre', $scriptProperties, false);
+$post = $modx->getOption('post', $scriptProperties, false);
+
 $output = array();
-$prefix = !empty($separator) ? '?' : '';
-$prefix = !empty($pre) ? '&' : $prefix;
-$suffix = !empty($post) ? '&' : '';
+$prefix = $separator ? '?' : '';
+$prefix = $pre ? '&' : $prefix;
+$suffix = $post ? '&' : '';
 
 if ( ! empty($_SESSION['paramStash'])) {
   $stash = $_SESSION['paramStash'];
 
   // Get user specified parameters or get them all
-  if (empty($params)) {
-    $paramList = array_keys($stash);
-  } else {
+  if ($params) {
     $paramList = explode(',', str_replace(' ', '', $params));
+  } else {
+    $paramList = array_keys($stash);
   }
 
   foreach ($paramList as $param) {
-    $paramName = !empty($valueOnly) ? '' : $param . '=';
+    $paramName = $valueOnly ? '' : $param . '=';
     if (isset($stash[$param])) {
       $output[] = $paramName . $stash[$param]['value'];
     }
