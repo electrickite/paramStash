@@ -52,6 +52,34 @@ $properties = array (
     'desc_trans' => 'prop_paramstash.valueonly_desc',
     'area_trans' => '',
   ),
+  'pre' => 
+  array (
+    'name' => 'pre',
+    'desc' => 'prop_paramstash.pre_desc',
+    'type' => 'combo-boolean',
+    'options' => 
+    array (
+    ),
+    'value' => false,
+    'lexicon' => 'paramstash:properties',
+    'area' => '',
+    'desc_trans' => 'prop_paramstash.pre_desc',
+    'area_trans' => '',
+  ),
+  'post' => 
+  array (
+    'name' => 'post',
+    'desc' => 'prop_paramstash.post_desc',
+    'type' => 'combo-boolean',
+    'options' => 
+    array (
+    ),
+    'value' => false,
+    'lexicon' => 'paramstash:properties',
+    'area' => '',
+    'desc_trans' => 'prop_paramstash.post_desc',
+    'area_trans' => '',
+  ),
 );
 
 return $properties;
