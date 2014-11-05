@@ -38,7 +38,9 @@ if (empty($paramSetting)) {
 
 // Stash URL parameters
 foreach ($params as $name => $value) {
+  if ( ! $modx->getOption('paramstash.case_sensitive')) $name = strtolower($name);
   $value = urlencode($value);
+
   if (
     in_array($name, $allowedParams) &&
     (empty($stash[$name]) || $stash[$name]['value'] != $value)

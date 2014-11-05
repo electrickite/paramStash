@@ -42,4 +42,14 @@ $systemSettings[2]->fromArray(array (
   'name' => 'Stash lifetime',
   'description' => 'The number of seconds a URL parameter should be kept in the parameter stash. Leaving the setting blank means cached parameters will never expire.',
 ), '', true, true);
+$systemSettings[3] = $modx->newObject('modSystemSetting');
+$systemSettings[3]->fromArray(array (
+  'key' => 'paramstash.case_sensitive',
+  'value' => '1',
+  'xtype' => 'combo-boolean',
+  'namespace' => 'paramstash',
+  'area' => '',
+  'name' => 'Case sensitive',
+  'description' => 'Determines if parameter names are case sensitive. If true, Foo and foo will be treated as distinct parameters',
+), '', true, true);
 return $systemSettings;

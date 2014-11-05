@@ -28,9 +28,11 @@ if ( ! empty($_SESSION['paramStash'])) {
   }
 
   foreach ($paramList as $param) {
+    $stashName = $modx->getOption('paramstash.case_sensitive') ? $param : strtolower($param);
     $paramName = $valueOnly ? '' : $param . '=';
-    if (isset($stash[$param])) {
-      $output[] = $paramName . $stash[$param]['value'];
+
+    if (isset($stash[$stashName])) {
+      $output[] = $paramName . $stash[$stashName]['value'];
     }
   }
 }
